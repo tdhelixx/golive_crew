@@ -1,0 +1,124 @@
+@charset "UTF-8";
+#lean_overlay{padding:10px;position:fixed;z-index:1100;top:0;left:0;height:100%;width:100%;background:rgba(0,0,0,0.7);display:none;overflow:scroll}
+.common-popups .modal-content{display:none;background:#ededed;max-width:1100px;width:97%;box-sizing:border-box;padding:30px;position:relative;margin:20px auto;max-height:calc(100vh - 110px);overflow-y:scroll;text-align:left}
+.common-popups .modal-content article{max-height:80vh;overflow-y:scroll}
+.common-popups .modal-content h3{text-align:center}
+.common-popups .modal-content .has_btns{display:flex;justify-content:center;flex-wrap:wrap}
+.common-popups .modal-content .btn{margin:5px;min-width:430px}
+.modal-loc-close{position:absolute;right:5px;top:5px;z-index:1002;cursor:pointer;width:40px;border:none;height:40px;border-radius:50%;background-color:transparent;display:flex;justify-content:center;align-items:center;box-shadow:none}
+.modal-loc-close span{display:none}
+.modal-loc-close i{position:relative;color:#fff;font-style:normal;padding-bottom:4px}
+.modal-loc-close i:before{font-size:40px;content:"x"}
+.modal-loc-close:hover{background-color:transparent}
+.modal-loc-close:hover i{color:#0193dd}
+.off{pointer-events:none}
+.loc-page h2{color:#85c226}
+.loc-page .h2{font-size:54px;color:#85c226;margin-bottom:20px}
+.loc-page .h3{color:#555;text-transform:none;font-size:20px}
+.loc-page .contain{max-width:1250px;margin:30px auto}
+.loc-page .modal-content{background-color:#85c226;text-align:center;padding:40px 20px 20px;margin-bottom:40px;top:8%!important}
+.loc-page .modal-content h3{text-transform:uppercase;font-weight:600;color:#fff}
+.loc-page .modal-content p,.loc-page .modal-content li{color:#fff;max-width:850px;margin:10px auto}
+.loc-page .bkg{position:relative;padding:60px 10px}
+.loc-page .bkg:before{content:"";position:absolute;left:-1000px;right:-1000px;top:0;bottom:0;z-index:-1;background-color:#f8f8f8}
+.loc-page .wrap{max-width:830px;margin:20px auto}
+.loc-page #lean_overlay{background:rgba(0,0,0,0.3)!important}
+.loc-accordion{margin:20px auto;text-align:left;position:relative;padding:10px;max-width:900px}
+.loc-accordion .toggle{font:700 22px/1.2 Assistant,sans-serif;position:relative;cursor:pointer;clear:both;padding:10px 10px 14px 35px;margin:7px auto 0;color:#fff;border-bottom:2px solid #fff}
+.loc-accordion .toggle:before{content:"+";color:#0193dd;font-size:24px;border-radius:50%;position:absolute;top:12px;left:0;border-radius:4px;border:1px solid #0193dd;width:22px;text-align:center;height:22px;line-height:.8}
+.loc-accordion .toggle.active{border:none}
+.loc-accordion .toggle.active:before{line-height:.9;content:"?";background-color:#0193dd;color:#1b322c}
+.loc-accordion .toggle:hover{color:#0193dd}
+.loc-accordion > div p{margin:0;position:relative;color:#fff}
+.loc-accordion > div{display:none;padding:0 20px 20px 40px;border-bottom:2px solid #fff}
+.loc-accordion > div ul{margin-bottom:0}
+.loc-accordion li{color:#fff}
+.common-svgs{flex-wrap:wrap}
+.loc-svg{height:120px;width:120px;display:inline-flex;justify-content:center;align-items:center;padding:8px}
+.loc-svg svg{width:100%;height:auto;max-height:100%}
+.loc-svg svg *{fill:#85c226}
+.loc-svg.no-fill svg *{fill:transparent;stroke:#85c226}
+#loc-review{position:relative;padding:50px 10px;text-align:center;background-color:#fff}
+#loc-review:before{background-color:#fff}
+#loc-review .h1{margin-bottom:30px}
+#loc-review .contain{max-width:800px;margin:20px auto 0}
+#loc-review p{max-width:95%;margin:10px auto auto;font:400 20px/1.5 "Josefin Sans",sans-serif;position:relative}
+#loc-review p:before{content:"\e838";font-size:24px;font-family:fontello;color:#0193dd;transform:rotate(180deg);display:inline-block;margin:0 5px 0 0;padding-top:6px}
+#loc-review p:after{content:"\e838";font-size:24px;font-family:fontello;color:#0193dd;display:inline-block;margin:0 0 0 5px;padding-top:6px;line-height:1}
+#loc-review star{letter-spacing:3px}
+#loc-review author{font-size:15px;margin:10px auto 20px;display:block}
+#loc-review .btn-alt{border-color:#663099;color:#663099}
+.bkg.pri .h2,.bkg.pri .h3,.bkg.pri .h4,.bkg.pri p{color:#fff}
+.bkg.pri:before{background-color:#85c226}
+.bkg.pri .btn{border:1px solid #fff;color:#fff}
+.bkg.pri .btn:hover{background-color:#0193dd;border-color:#0193dd}
+.bkg.pri .loc-svg svg *{fill:#fff}
+.bkg.pri .loc-svg.no-fill svg *{stroke:#fff;fill:transparent}
+.bkg.seco .h2,.bkg.seco .h3,.bkg.seco .h4,.bkg.seco p{color:#fff}
+.bkg.seco:before{background-color:#0193dd}
+.bkg.seco .btn{border-color:#fff;color:#fff}
+.bkg.seco .btn:hover{background-color:#85c226;border-color:#85c226;color:#fff}
+.loc-banner img{width:100%}
+#loc-title{padding:30px 10px 60px;text-align:center;max-width:800px;margin:auto}
+#loc-title h1{font-size:24px;letter-spacing:-.02em;text-align:center;margin-bottom:20px}
+.flex-row-icons{display:flex;flex-wrap:wrap;margin:30px auto;max-width:1200px}
+.flex-row-icons .h3{font-size:20px}
+.flex-row-icons > *{padding:10px;margin:10px auto;flex:0 1 270px}
+.flex-row-icons span{display:flex;justify-content:center;align-items:center;height:120px}
+.flex-row-icons.tres > *{flex:0 1 30%}
+.loc-block{margin:auto;text-align:center;padding:60px 10px}
+.loc-block.diff .btn-alt{color:#ccebad}
+.loc-block.diff .btn-alt:hover{background-color:#ccebad;border-color:#ccebad;color:#85c226}
+.loc-block .accordion{text-align:left;max-width:1000px;margin:20px auto}
+.loc-block .accordion .toogle{text-transform:uppercase;border-color:#fff}
+.sv-close{display:flex;align-items:center;justify-content:center;margin:auto}
+.loc-drs .loc-block{padding:10px}
+.flex-row-drs{display:flex;justify-content:space-around;max-width:700px;margin:10px auto 20px}
+.flex-row-drs .dr-link{color:#000;font-size:17px;background-color:transparent;transition:.3s all;margin:10px auto}
+.flex-row-drs .dr-link img{margin-bottom:10px;display:block}
+.flex-row-drs .dr-link:hover{color:#85c226}
+#dr-bios .h3{margin:20px 0 0}
+#dr-bios .h3 + p{margin-top:5px}
+.loc-pops{display:flex;justify-content:space-around;margin:auto;flex-wrap:wrap}
+.loc-pops .h3{margin-top:8px;color:#85c226;font-size:22px}
+.loc-pops .h3 small{display:block}
+.loc-pops a:hover .h4{color:#707070}
+.loc-services{max-width:1100px}
+.loc-services .empty{flex:1 1 100%}
+.loc-services > a{margin:10px auto 20px;flex:0 1 260px}
+.loc-services > a:hover figure{box-shadow:0 0 0 5px #0193dd}
+.loc-services > a:hover .h3{color:#0193dd}
+.loc-services figure{display:table;margin:auto;overflow:hidden;transition:.4s all}
+#loc-map{max-width:980px;margin:40px auto}
+button.loc-close,.loc-close{font-size:15px;border:none;background-color:transparent;color:#fff;font-weight:700;letter-spacing:.2em;padding:0;margin:20px auto 10px;display:flex;align-items:center}
+button.loc-close span,.loc-close span{display:inline-block;margin:0 5px}
+button.loc-close:hover svg *,.loc-close:hover svg *{stroke:#0193dd}
+.loc-close:hover{color:#0193dd}
+.more-hide{display:none;max-width:1400px;width:90%;padding:40px;margin:40px auto 20px;background-color:#f0f0f0;position:relative;z-index:3;box-shadow:1px 1px 5px 0 rgba(0,0,0,0.2117647059);text-align:left}
+.more-hide .h2,.more-hide .h3,.more-hide p,.more-hide li{color:#000!important}
+.more-hide:before{content:"";position:absolute;left:50%;transform:translateX(-50%);top:-19px;width:0;width:0;height:0;filter:drop-shadow(0 -1px 1px rgba(0,0,0,0.0862745098));border-style:solid;border-width:0 25px 20px;border-color:transparent transparent #f0f0f0}
+.more-close{display:flex;justify-content:center;align-items:center;margin:auto}
+.more-close svg{margin-left:10px;overflow:visible}
+.more-close:hover{color:#85c226}
+.more-close:hover svg *{stroke:#85c226}
+@media (max-width: 1000px) {
+.loc-page .h2{font-size:42px}
+.loc-page .bkg{padding:40px 10px}
+.flex-row-icons > * br{display:none}
+.loc-services .empty{display:none}
+.loc-services a{flex:0 1 48%}
+#loc-map iframe{height:350px}
+}
+@media (max-width: 750px) {
+.flex-row-icons.tres > *{flex:0 1 48%}
+.flex-row-drs{flex-wrap:wrap}
+}
+@media (max-width: 480px) {
+.loc-page .h2{font-size:36px}
+.loc-page .h2 br{display:none}
+.flex-row-icons > *{padding:10px 0;flex:0 1 250px}
+.more-hide{width:100%}
+}
+@media (max-width: 400px) {
+.loc-page .h3{font-size:17px}
+}

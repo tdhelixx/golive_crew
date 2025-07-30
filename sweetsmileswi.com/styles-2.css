@@ -1,0 +1,151 @@
+/*--- ER ICONS ---*/
+/***** Remove the class="off" from the leanModal link in the html to activate the link/connect to its pop-up *****/
+.off {
+  pointer-events: none;
+}
+.service-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.service-icons h3 {
+  margin: 5px auto;
+  font-size: 22px;
+  line-height: 1.1;
+}
+.service-icons > * {
+  padding: 5px;
+  flex: 0 1 210px;
+  margin: 10px auto;
+  display: block;
+}
+.service-icons a {
+  color: #2f3437;
+  text-decoration: none;
+}
+.service-icons a:hover .icon .ic-color {
+  fill: #3a97bb;
+}
+.service-icons a:hover h3 {
+  color: #3a97bb;
+}
+.ic-color {
+  fill: #0193dd;
+}
+.sv-icon {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.has-h3 {
+  clear: both;
+  display: table;
+  width: 100%;
+  margin: 20px auto;
+  text-align: left;
+}
+.has-h3 h3 {
+  margin: 0 auto 10px;
+  text-align: left;
+}
+@media (max-width: 750px) {
+  .has-h3, .has-h3 h3 {
+    text-align: center;
+  }
+}
+/*==================== Modal ================*/
+#lean_overlay {
+  padding: 10px;
+  position: fixed;
+  z-index: 1100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  overflow: scroll;
+}
+#common-popups .modal-content {
+  display: none;
+  background: #ededed;
+  max-width: 1200px;
+  width: 95%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  position: relative;
+  margin: auto !important;
+  text-align: center;
+  left: 50% !important;
+  top: 50px !important;
+  transform: translateX(-50%) !important;
+  max-height: calc(100vh - 110px);
+  overflow-y: scroll;
+}
+#common-popups .modal-content h3 {
+  text-align: center;
+  font-size: 26px;
+  margin: 15px 0 10px;
+}
+#common-popups .modal-content .has_btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#common-popups .modal-content .btn {
+  margin: 5px;
+  min-width: 430px;
+}
+#common-popups .modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 5px;
+  z-index: 1002;
+  cursor: pointer;
+  color: #0193dd;
+  line-height: 1;
+}
+#common-popups .modal-close span {
+  display: none;
+}
+#common-popups .modal-close i {
+  position: relative;
+  color: #0193dd;
+  font-style: normal;
+  padding-bottom: 4px;
+}
+#common-popups .modal-close i:before {
+  font-size: 40px;
+  content: '\00d7';
+}
+#common-popups .modal-close:hover i {
+  color: #555;
+}
+#common-popups .modal-content .has_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#common-popups .modal-content .btn {
+  margin: 5px;
+  min-width: 350px;
+}
+#common-popups .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#common-popups .buttons > p {
+  margin: 5px;
+}
